@@ -17,18 +17,5 @@ namespace JermaineJacksonA8
             @"C:\\Users\\jj00490\\Desktop\\JermaineJacksonA8\\JermaineJacksonA8\\Data\\Assignment8Data.json";
 
         private readonly string _jsonString = File.ReadAllText(JsonPath);
-
-        public bool IsDataLoaded()
-        {
-            if (_houses.Count > 0)
-            {
-                foreach (House house in _houses)
-                {
-                    Console.WriteLine(house.ToString());
-                }
-                return true;
-            }
-            return false;
-        }
     }
 }
