@@ -22,6 +22,10 @@ namespace JermaineJacksonA8
         {
             if (_houses.Count > 0)
             {
+                foreach (House house in _houses)
+                {
+                    Console.WriteLine(house.ToString());
+                }
                 return true;
             }
             return false;
